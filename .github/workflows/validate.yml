@@ -1,0 +1,35 @@
+name: Validação do plugin
+
+"on":
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - name: Checkout
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - name: Configurar Python
+        uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7.1.0
+        with:
+          python-version: "3.12"
+      - name: Conferir transcrições
+        run: python3 skills/governanca-documental-institucional/scripts/sync_sources.py --check
+      - name: Conferir integridade do pacote
+        run: python3 skills/governanca-documental-institucional/scripts/verify_package.py --strict-dir-name
+      - name: Conferir bootstrap portátil
+        run: python3 skills/governanca-documental-institucional/scripts/rebuild_portable_gate.py --check
+      - name: Comparar payload com os scripts originais
+        run: python3 skills/governanca-documental-institucional/scripts/portable_gate.py --verify-payload --compare-source
+      - name: Executar testes originais da Skill
+        run: python3 -m unittest discover -s skills/governanca-documental-institucional/tests -v
+      - name: Executar testes do repositório
+        run: python3 -m unittest discover -s tests -v

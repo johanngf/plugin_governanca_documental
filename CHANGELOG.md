@@ -1,5 +1,14 @@
 # Changelog
 
+## Pós-merge e pré-release do plugin 0.2.2 — 2026-11-19 (preparação local)
+
+- Migração integrada na `main` pelo PR #1, no commit `a9f3a0435009d74a199f3f52977246f1f3d409fc`; README atualizado para distinguir integração de código e publicação do instalável.
+- Release instalável 0.2.2 ainda não publicada; release histórica `v1.0.0` preservada. Atualização do portal permanece fora desta etapa.
+- Reexecutados na `main`, antes de alterações, os quatro verificadores e as duas suítes existentes com Python 3.12.3: 59 testes aprovados, 1 ignorado por falta de amostra externa e nenhuma falha.
+- ZIP original conferido por SHA-256, CRC, estrutura, inventário e comparação byte a byte dos 31 arquivos com a árvore integrada; nenhum arquivo do pacote ou do inventário foi alterado.
+- Preparado CI mínimo com os mesmos seis comandos em pull requests e pushes para `main`, sem publicação ou upload de artefatos. Execução remota pendente de push autorizado.
+- Acrescentado registro técnico de pré-release; preservado integralmente o registro histórico `docs/MIGRACAO_0.2.2.md`. Novas alterações permanecem locais para revisão humana.
+
 ## Plugin 0.2.2 / Skill 1.1.1 — 2026-11-19 (migração local, publicação pendente)
 
 - Repositório renomeado de `skill_governanca_documental` para `plugin_governanca_documental`; distribuição corrente passa a ser o plugin completo.
