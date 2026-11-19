@@ -1,6 +1,6 @@
-<!-- CÓPIA TEXTUAL DERIVADA AUTOMATICAMENTE de Diretriz_Padronizacao_Documental_Institucional_v3.4.docx. Sem autoridade normativa independente. Elementos visuais/diagramação devem ser consultados no DOCX canônico. Não editar manualmente; executar scripts/sync_sources.py --write. -->
+<!-- CÓPIA TEXTUAL DERIVADA AUTOMATICAMENTE de Diretriz_Padronizacao_Documental_Institucional_v3.5.docx. Sem autoridade normativa independente. Elementos visuais/diagramação devem ser consultados no DOCX canônico. Não editar manualmente; executar scripts/sync_sources.py --write. -->
 
-# Transcrição de consulta — Diretriz_Padronizacao_Documental_Institucional_v3.4
+# Transcrição de consulta — Diretriz_Padronizacao_Documental_Institucional_v3.5
 
 GOVERNANÇA DOCUMENTAL
 
@@ -11,9 +11,9 @@ Padrão institucional para materialização, apresentação e governança formal
 | Finalidade | Estabelecer regras institucionais transversais para materialização, apresentação, identificação, versionamento e validação formal de documentos, preservando consistência visual, rastreabilidade e governança do artefato. |
 | --- | --- |
 | Escopo | Documentos institucionais em formato DOCX produzidos ou revisados no âmbito da organização, independentemente da área, do executor ou da forma de operacionalização, respeitados templates e fontes específicas aplicáveis. |
-| Versão | 3.4 - Integridade estrutural OOXML e navegação por títulos |
-| Data de referência | 23 de outubro de 2026 |
-| Situação | Diretriz institucional vigente de Governança Documental; substitui a versão 3.3 a partir de 26 de outubro de 2026. |
+| Versão | 3.5 - Integridade estrutural OOXML e navegação por títulos; saneamento formal |
+| Data de referência | 17 de novembro de 2026 |
+| Situação | Diretriz institucional vigente de Governança Documental; substitui a versão 3.4 a partir de 17 de novembro de 2026. |
 | Responsável pelo documento | Johann Munzlinger |
 | Autoria | Johann Munzlinger |
 | Auxílio de IA generativa | Documento estruturado e revisado com auxílio de IA generativa. A validação da aplicabilidade, da aderência institucional e da versão final permanece sob responsabilidade humana. |
@@ -382,6 +382,7 @@ Para aplicar esta diretriz, identifique primeiro o template e as fontes específ
 | 3.2 | 19/10/2026 | Explicitação da consistência de estilos para elementos semanticamente equivalentes, especialmente títulos do mesmo nível; vedação a variações locais por formatação direta sem regra específica; reforço da inspeção comparativa no processo de materialização, no gate formal e na instrução operacional a partir de feedback de uso. |
 | 3.3 | 21/10/2026 | Consolidação de fonte única para parâmetros formais; ampliação da paleta como referência canônica sem alteração da identidade visual; substituição de valores duplicados por remissões; explicitação de que propriedades críticas de conformidade não podem depender apenas de inferência visual; redução da instrução operacional consolidada para orientação de aplicação; normalização da referência à ABNT NBR 14724:2024 Versão Corrigida:2025; promoção como diretriz institucional vigente após revisão cruzada e validação dirigida. |
 | 3.4 | 23/10/2026 | Verificação da integridade estrutural OOXML e do reconhecimento de títulos; priorização de Sumário atualizável baseado em títulos e redução de bookmarks redundantes; reforço do gate formal para navegação. Validada nos testes A/B/C e R01 e promovida à vigência em 26/10/2026. |
+| 3.5 | 17/11/2026 | Saneamento exclusivamente formal da materialização OOXML: inclusão de w:val="clear" nos sombreamentos incompletos e reordenação de w:tblPr. Nenhuma regra de apresentação, valor tipográfico ou arquitetura normativa foi alterada. Identificação, referências e histórico atualizados, com preservação das entradas anteriores. |
 
 Referências
 
@@ -399,7 +400,7 @@ ASSOCIAÇÃO BRASILEIRA DE NORMAS TÉCNICAS. ABNT NBR 14724:2024 Versão Corrigi
 
 ECMA INTERNATIONAL. ECMA-376: Office Open XML File Formats. Part 1: Fundamentals and Markup Language Reference. 5. ed., 2016.
 
-MUNZLINGER, Johann. Diretriz de Qualidade e Construção de Conteúdo Documental Institucional. Versão 1.2. Diretriz institucional vigente, 2026.
+MUNZLINGER, Johann. Diretriz de Qualidade e Construção de Conteúdo Documental Institucional. Versão 1.3. Diretriz institucional vigente, 2026.
 
 NATIONAL INFORMATION STANDARDS ORGANIZATION (NISO). CRediT: Contributor Role Taxonomy. Baltimore: NISO, [s.d.]. Disponível em: https://credit.niso.org/. Acesso em: 18 set. 2026.
 

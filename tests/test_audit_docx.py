@@ -11,7 +11,7 @@ SK=ROOT/'skills'/'governanca-documental-institucional'
 sys.path.insert(0,str(SK/'scripts'))
 from audit_docx import audit, W
 
-CANON=SK/'references'/'normativas'/'Diretriz_Padronizacao_Documental_Institucional_v3.4.docx'
+CANON=SK/'references'/'normativas'/'Diretriz_Padronizacao_Documental_Institucional_v3.5.docx'
 
 class AuditTest(unittest.TestCase):
     def test_canonical_has_no_order_violation(self):

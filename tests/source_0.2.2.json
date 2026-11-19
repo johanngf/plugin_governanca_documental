@@ -1,0 +1,131 @@
+{
+  "archive": "Governanca_Documental_Plugin_Importavel_v0.2.2_ESTAVEL.zip",
+  "archive_sha256": "dc5fab000eb67e8a0efcabc6681ea80e73fe3c845b394793f703ac7fc2ac4b4c",
+  "archive_root": "governanca-documental-plugin",
+  "files": {
+    ".codex-plugin/plugin.json": {
+      "size_bytes": 925,
+      "sha256": "29f172236dfff8c49eed9023d2297d326f5d5ebeb05fc801ccde1f6f9a7c5bd9"
+    },
+    "plugin.json": {
+      "size_bytes": 1088,
+      "sha256": "507ff716b95bd952ff80cf8aeb51002ed867a8bd5efc1debe021191b9514fb13"
+    },
+    "skills/governanca-documental-institucional/SKILL.md": {
+      "size_bytes": 22346,
+      "sha256": "12db69fb4482cf65e5a0d37c1220d369d04dd549ae2a969e18c34157eb7d9557"
+    },
+    "skills/governanca-documental-institucional/docs/EXECUCAO_PORTATIL.md": {
+      "size_bytes": 3964,
+      "sha256": "ee041673781a3762425d7a918e66087232330d7bf4256ac9588576d4520f2696"
+    },
+    "skills/governanca-documental-institucional/docs/GATE_FORMAL_EVIDENCIAS.md": {
+      "size_bytes": 5742,
+      "sha256": "79299f87caa9cf3948dc945ad71a13fa19e84e04008a657de3e6cbb10a577c18"
+    },
+    "skills/governanca-documental-institucional/docs/NOTAS_TECNICAS.md": {
+      "size_bytes": 8277,
+      "sha256": "70661c10b42417b66ded888852fe89624a90175164f485f8d456d52594abb2ce"
+    },
+    "skills/governanca-documental-institucional/docs/TESTE_INTEROPERABILIDADE_WORD_WEB.md": {
+      "size_bytes": 2436,
+      "sha256": "a466540c7f716fc057508b91f7d6b4465704cff8d3732da4e81cead118d8e3a7"
+    },
+    "skills/governanca-documental-institucional/manifest.json": {
+      "size_bytes": 7244,
+      "sha256": "a4118f2f6d965a634a07b0c0fd7ce17072f19067bc77527e3201fc8714cc44c2"
+    },
+    "skills/governanca-documental-institucional/references/consulta/Contrato_Operacional_Execucao_Documental_por_IA_v0.8.md": {
+      "size_bytes": 36192,
+      "sha256": "3f6e1ed6b68ce16ef39166e528aaf524c2d1b1ec740620683f870fd407fedbd1"
+    },
+    "skills/governanca-documental-institucional/references/consulta/Diretriz_Padronizacao_Documental_Institucional_v3.5.md": {
+      "size_bytes": 39880,
+      "sha256": "e75dc7ea4b0140779236bc3c038d84cc334a821182b12325a00c7b6da729d123"
+    },
+    "skills/governanca-documental-institucional/references/consulta/Diretriz_Qualidade_Construcao_Conteudo_Documental_Institucional_v1.3.md": {
+      "size_bytes": 30362,
+      "sha256": "e288361100131dc766da29672b5380ed6c98ded877e1df9f8b0fb4546dfa82bb"
+    },
+    "skills/governanca-documental-institucional/references/consulta/Modelo_Formal_Workflow_Execucao_Documental_IA_v0.5.md": {
+      "size_bytes": 25180,
+      "sha256": "6f356c345c610b1e4c222acfd883ff695d3d7ab0bcaefd8d0025c5593bcf9973"
+    },
+    "skills/governanca-documental-institucional/references/normativas/Contrato_Operacional_Execucao_Documental_por_IA_v0.8.docx": {
+      "size_bytes": 59199,
+      "sha256": "67e9a966b466e4e181f2e4451d5b53aa16c6528a6711ac69126ed42e9dbba6c1"
+    },
+    "skills/governanca-documental-institucional/references/normativas/Diretriz_Padronizacao_Documental_Institucional_v3.5.docx": {
+      "size_bytes": 59058,
+      "sha256": "8193c355bc558161167eb904646f43441f4dad72bd1ec4f885d0715796b30263"
+    },
+    "skills/governanca-documental-institucional/references/normativas/Diretriz_Qualidade_Construcao_Conteudo_Documental_Institucional_v1.3.docx": {
+      "size_bytes": 37072,
+      "sha256": "c826a93c75a9f63c5faec2795cb862a6e8850fbf62c6d38d1e6c4e4b978ebfb1"
+    },
+    "skills/governanca-documental-institucional/references/normativas/Modelo_Formal_Workflow_Execucao_Documental_IA_v0.5.docx": {
+      "size_bytes": 53592,
+      "sha256": "4db0d953432e8281ec623b5c8cca5b507cea56a680eb5a747a60a7873ebe2f39"
+    },
+    "skills/governanca-documental-institucional/scripts/audit_docx.py": {
+      "size_bytes": 21250,
+      "sha256": "43e708e7f106ec0e238b15856f8227ca53b36f182f38faad8bc9fc7d4d28d737"
+    },
+    "skills/governanca-documental-institucional/scripts/normalize_docx_tables.py": {
+      "size_bytes": 5438,
+      "sha256": "5f9c90013b84357a6657445f3c9c1fea38a4a8eb27877a8bfc764c424de4706f"
+    },
+    "skills/governanca-documental-institucional/scripts/portable_gate.py": {
+      "size_bytes": 23920,
+      "sha256": "a722e25e2034fd5461cf36bafe32eb0c16ec3e5c16ad6af4895ee99cebf6805e"
+    },
+    "skills/governanca-documental-institucional/scripts/rebuild_portable_gate.py": {
+      "size_bytes": 3325,
+      "sha256": "12df521343810e7f4f031d90e115dd43938c79c1830977b3a68c472d4a245fd6"
+    },
+    "skills/governanca-documental-institucional/scripts/run_gate.py": {
+      "size_bytes": 8411,
+      "sha256": "b9c225022b17e54b8757d1ac57a8b7ff196555a803973a101fa24aab1957a85a"
+    },
+    "skills/governanca-documental-institucional/scripts/sync_sources.py": {
+      "size_bytes": 4398,
+      "sha256": "86e33280056bfaa27d780271fb78faa60faa7a27651bc282378bc9223d59865f"
+    },
+    "skills/governanca-documental-institucional/scripts/verify_gate_evidence.py": {
+      "size_bytes": 6975,
+      "sha256": "62ea098be9216b2e64eb4ed256fc102fdae7e4761649c09967942ae807960142"
+    },
+    "skills/governanca-documental-institucional/scripts/verify_package.py": {
+      "size_bytes": 5553,
+      "sha256": "6a8a0dc9dcaadcffbe0bedbfc540f2d2f814dc81d4ee2185a055cb77871c14c4"
+    },
+    "skills/governanca-documental-institucional/tests/regression_bt01_bt04.py": {
+      "size_bytes": 3115,
+      "sha256": "c3fca26e71d44d0121356ca38aa690f3fdb32cd2a0fae6727a2564de94cc4a4e"
+    },
+    "skills/governanca-documental-institucional/tests/regression_samples.py": {
+      "size_bytes": 1769,
+      "sha256": "d17c045d3fb1e79a5a893729c168828b4ea6221731bb6dfdae5010c8450b5404"
+    },
+    "skills/governanca-documental-institucional/tests/test_audit_docx.py": {
+      "size_bytes": 5871,
+      "sha256": "4cd4f4af6c4036898dd94a6da9ccd161e654201f184dff5b22040e8a7bae9efd"
+    },
+    "skills/governanca-documental-institucional/tests/test_cover_gate_evidence.py": {
+      "size_bytes": 6246,
+      "sha256": "84403027a01ca0e25d74634362e92e8ad86a3099ef121558c4efa907052c127b"
+    },
+    "skills/governanca-documental-institucional/tests/test_gate_and_repair.py": {
+      "size_bytes": 6183,
+      "sha256": "9e1404b5fb5b6c984bcb97b9e53c8ca9f7c36be6931583c34377a5acc1f25511"
+    },
+    "skills/governanca-documental-institucional/tests/test_hardened_gate.py": {
+      "size_bytes": 8069,
+      "sha256": "a1ccc3a2730e135483a24143df3a489023dfa3f6c95930298558f20de1c1d599"
+    },
+    "skills/governanca-documental-institucional/tests/test_portable_gate.py": {
+      "size_bytes": 5906,
+      "sha256": "5a754632ab54527d0867f2c38d471932c72f95c28dfbbd724be13ac6bd0f7130"
+    }
+  }
+}

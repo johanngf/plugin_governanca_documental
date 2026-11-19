@@ -1,5 +1,17 @@
 # Changelog
 
+## Plugin 0.2.2 / Skill 1.1.1 — 2026-11-19 (migração local, publicação pendente)
+
+- Repositório renomeado de `skill_governanca_documental` para `plugin_governanca_documental`; distribuição corrente passa a ser o plugin completo.
+- Incorporados, byte a byte, os 31 arquivos do ZIP original 0.2.2: manifestos portátil e de compatibilidade, Skill 1.1.1, documentação, scripts e testes.
+- Substituídas as quatro normas por Contrato 0.8, Padronização 3.5, Qualidade 1.3 e Modelo Formal 0.5, com suas transcrições derivadas e hashes originais.
+- Retirados o manifesto duplicado da raiz e o build da Skill independente; nenhum build de plugin foi inventado. Procedimentos e evidências da Skill 1.0.0 seguem preservados no histórico e na tag `v1.0.0`.
+- Adaptados os testes do repositório e adicionado inventário de proveniência para conferir todos os arquivos transportados, incluindo tamanhos e SHA-256.
+- Publicação pública futura do pacote completo e das normas autorizada pelo responsável; preparação local não autoriza push, merge, release nem alteração do portal.
+- Mantidas as ressalvas originais: auditoria OOXML parcial, execução condicional ao host e validação humana; nenhuma homologação universal ou nova execução funcional do host é declarada.
+
+As entradas abaixo descrevem a distribuição histórica da Skill independente.
+
 ## 1.0.0 — 2026-10-28
 
 - Promovida a distribuição estável após a bateria funcional H00–H07, com limites de evidência registrados em `tests/HOMOLOGACAO.md`.

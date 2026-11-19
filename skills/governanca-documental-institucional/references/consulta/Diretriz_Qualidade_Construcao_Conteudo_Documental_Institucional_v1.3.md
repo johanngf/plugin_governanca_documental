@@ -1,6 +1,6 @@
-<!-- CÓPIA TEXTUAL DERIVADA AUTOMATICAMENTE de Diretriz_Qualidade_Construcao_Conteudo_Documental_Institucional_v1.2.docx. Sem autoridade normativa independente. Elementos visuais/diagramação devem ser consultados no DOCX canônico. Não editar manualmente; executar scripts/sync_sources.py --write. -->
+<!-- CÓPIA TEXTUAL DERIVADA AUTOMATICAMENTE de Diretriz_Qualidade_Construcao_Conteudo_Documental_Institucional_v1.3.docx. Sem autoridade normativa independente. Elementos visuais/diagramação devem ser consultados no DOCX canônico. Não editar manualmente; executar scripts/sync_sources.py --write. -->
 
-# Transcrição de consulta — Diretriz_Qualidade_Construcao_Conteudo_Documental_Institucional_v1.2
+# Transcrição de consulta — Diretriz_Qualidade_Construcao_Conteudo_Documental_Institucional_v1.3
 
 GOVERNANÇA DOCUMENTAL
 
@@ -11,9 +11,9 @@ Critérios transversais para construção, revisão e validação do conteúdo d
 | Finalidade | Estabelecer critérios institucionais transversais para concepção, estruturação, fundamentação, revisão e validação do conteúdo de documentos, de modo que sejam claros, compreensíveis para o público previsto, navegáveis, rastreáveis, proporcionais e suficientemente autossuficientes para seu uso. |
 | --- | --- |
 | Escopo | Documentos institucionais produzidos ou revisados no âmbito da organização, independentemente da área, da ferramenta, do executor ou da forma de operacionalização, respeitados templates, diretrizes, normas e requisitos específicos aplicáveis. |
-| Versão | 1.2 - Coesão textual e construção de parágrafos |
-| Data de referência | 21 de outubro de 2026 |
-| Situação | Diretriz institucional vigente de Governança Documental para qualidade e construção de conteúdo. |
+| Versão | 1.3 - Coesão textual e construção de parágrafos; saneamento formal OOXML |
+| Data de referência | 17 de novembro de 2026 |
+| Situação | Diretriz institucional vigente de Governança Documental para qualidade e construção de conteúdo; substitui a versão 1.2 a partir de 17 de novembro de 2026. |
 | Responsável pelo documento | Johann Munzlinger |
 | Autoria | Johann Munzlinger |
 | Auxílio de IA generativa | Documento estruturado e revisado com auxílio de IA generativa. A validação do conteúdo, da aplicabilidade e da adoção permanece sob responsabilidade humana. |
@@ -297,6 +297,7 @@ Ao construir ou revisar conteúdo documental institucional, identifique primeiro
 | 1.0 | 21/09/2026 | Criação da diretriz transversal de qualidade e construção de conteúdo; formalização dos critérios de clareza, adequação ao público, navegabilidade, coerência, proporcionalidade, autossuficiência contextual, proveniência e fonte autoritativa; adequação formal à Diretriz de Padronização Documental Institucional v3.0. |
 | 1.1 | 25/09/2026 | Explicitação do tratamento de siglas na primeira ocorrência relevante, com exceções proporcionais ao público e ao domínio; reforço da consistência terminológica; inclusão da regra de complementaridade entre prosa e componentes estruturados, evitando repetição meramente narrativa; atualização do gate, do processo de redação e da referência à Diretriz de Padronização v3.1. |
 | 1.2 | 21/10/2026 | Inclusão do critério de coesão textual e paragrafação; formalização do parágrafo como unidade coerente de raciocínio; vedação à quebra mecânica por sentença; atualização do processo de redação, do gate de qualidade e da instrução operacional a partir de feedback de uso; validação dirigida dos comportamentos de coesão e promoção como diretriz institucional vigente após revisão cruzada final. |
+| 1.3 | 17/11/2026 | Saneamento exclusivamente formal da estrutura OOXML: complementação de w:shd com w:val="clear" e ordenação de propriedades w:tblPr. Preservados integralmente o conteúdo normativo, os critérios de qualidade e o histórico de versões. Atualizadas identificação e referência da fonte institucional utilizada. |
 
 Referências
 
@@ -308,4 +309,4 @@ ASSOCIAÇÃO BRASILEIRA DE NORMAS TÉCNICAS. ABNT NBR 6023:2025: Informação e 
 
 INTERNATIONAL ORGANIZATION FOR STANDARDIZATION. ISO 24495-1:2023: Plain language - Part 1: Governing principles and guidelines. Geneva: ISO, 2023.
 
-MUNZLINGER, Johann. Diretriz de Padronização Documental Institucional. Versão 3.3. Diretriz institucional vigente, 2026.
+MUNZLINGER, Johann. Diretriz de Padronização Documental Institucional. Versão 3.5. Diretriz institucional vigente, 2026.

@@ -1,6 +1,6 @@
-<!-- CÓPIA TEXTUAL DERIVADA AUTOMATICAMENTE de Contrato_Operacional_Execucao_Documental_por_IA_v0.7.docx. Sem autoridade normativa independente. Elementos visuais/diagramação devem ser consultados no DOCX canônico. Não editar manualmente; executar scripts/sync_sources.py --write. -->
+<!-- CÓPIA TEXTUAL DERIVADA AUTOMATICAMENTE de Contrato_Operacional_Execucao_Documental_por_IA_v0.8.docx. Sem autoridade normativa independente. Elementos visuais/diagramação devem ser consultados no DOCX canônico. Não editar manualmente; executar scripts/sync_sources.py --write. -->
 
-# Transcrição de consulta — Contrato_Operacional_Execucao_Documental_por_IA_v0.7
+# Transcrição de consulta — Contrato_Operacional_Execucao_Documental_por_IA_v0.8
 
 GOVERNANÇA DOCUMENTAL
 
@@ -11,9 +11,9 @@ Especificação operacional do workflow institucional de governança documental 
 | Finalidade | Definir o comportamento operacional esperado de uma IA ao criar, revisar, evoluir, corrigir ou materializar documentos institucionais submetidos ao sistema de governança documental. |
 | --- | --- |
 | Escopo | Fluxos institucionais de execução documental por IA, independentemente de fornecedor, modelo, aplicação ou arquitetura de implementação, em conjunto com as fontes normativas e específicas aplicáveis. |
-| Versão | 0.7 - Gate de integridade estrutural e compatibilidade de navegação |
-| Data de referência | 23 de outubro de 2026 |
-| Situação | Especificação operacional institucional vigente; substitui a versão 0.6 a partir de 26 de outubro de 2026. |
+| Versão | 0.8 - Gate de integridade estrutural e compatibilidade de navegação; saneamento formal |
+| Data de referência | 17 de novembro de 2026 |
+| Situação | Especificação operacional institucional vigente; substitui a versão 0.7 a partir de 17 de novembro de 2026. |
 | Responsável pelo documento | Johann Munzlinger |
 | Autoria | Johann Munzlinger |
 | Auxílio de IA generativa | Documento estruturado e materializado com auxílio de IA generativa. A validação da aplicabilidade, da evolução do workflow e da versão adotada permanece sob responsabilidade humana. |
@@ -81,7 +81,7 @@ Sumário
 
 21 Controle de Revisão	12
 
-Referências	13
+Referências	14
 
 ## 1 Finalidade
 
@@ -351,7 +351,7 @@ Uma implementação é compatível quando preserva as responsabilidades, políti
 
 ## 20 Estado de maturidade
 
-A versão 0.7 constitui a especificação operacional institucional vigente, incorporando refinamento localizado do gate formal para integridade estrutural e navegação. Os testes A/B/C e a regressão R01 confirmaram os estilos, a hierarquia e a navegação correta após abertura no Word para Web. O arquivo baixado manteve identidade binária com o original; não houve evidência de regravação efetiva pelo Word para Web. A promoção não modifica estados ou transições do Modelo Formal v0.4.
+A versão 0.7 incorporou refinamento localizado do gate formal para integridade estrutural e navegação. Os testes A/B/C e a regressão R01 confirmaram os estilos, a hierarquia e a navegação correta após abertura no Word para Web. O arquivo baixado manteve identidade binária com o original; não houve evidência de regravação efetiva pelo Word para Web. A promoção da versão 0.7 não modificou estados ou transições do Modelo Formal v0.4.
 
 A bateria inicial de testes validou o modelo de autonomia proporcional, escalonamento pontual, classificação de fontes, separação entre conteúdo e artefato e proporcionalidade de execução, além de evidenciar a necessidade de verificar premissas de intervenção e comprovar mudanças declaradas.
 
@@ -361,7 +361,7 @@ Esses refinamentos foram incorporados na versão 0.3 sem alterar a arquitetura c
 
 A bateria dirigida executada sobre a versão 0.4 confirmou os comportamentos esperados de consistência de títulos, hierarquia visual, coesão textual, complementaridade entre prosa e componentes e correção autônoma nos gates. O teste corretivo de coesão identificou alteração colateral de uma unidade textual já válida; a versão 0.5 incorporou a regra de correção mínima suficiente e o reteste dirigido confirmou a correção da fragmentação com preservação das unidades textuais já conformes. O lifecycle formal permaneceu inalterado.
 
-Na consolidação prévia à promoção, a revisão de consumo das fontes identificou duas condições operacionais adicionais: a necessidade de acesso efetivo ao conteúdo de regras referenciadas e o comportamento explícito quando uma decisão humana material é necessária, mas não há resposta disponível na execução. A versão 0.6 incorpora essas condições sem alterar estados ou transições do Modelo Formal v0.4. O T09 confirmou o bloqueio localizado quando uma fonte específica obrigatória está indisponível, sem impedir Resultados independentes; o T10 confirmou a manutenção do bloqueio quando uma decisão humana material é necessária e não há resposta disponível, sem adoção de valor padrão ou inferência substitutiva. Com esses deltas validados e a revisão cruzada final concluída, a versão 0.6 é promovida a especificação operacional institucional vigente.
+Na consolidação prévia à promoção, a revisão de consumo das fontes identificou duas condições operacionais adicionais: a necessidade de acesso efetivo ao conteúdo de regras referenciadas e o comportamento explícito quando uma decisão humana material é necessária, mas não há resposta disponível na execução. A versão 0.6 incorpora essas condições sem alterar estados ou transições do Modelo Formal v0.4. O T09 confirmou o bloqueio localizado quando uma fonte específica obrigatória está indisponível, sem impedir Resultados independentes; o T10 confirmou a manutenção do bloqueio quando uma decisão humana material é necessária e não há resposta disponível, sem adoção de valor padrão ou inferência substitutiva. Com esses deltas validados e a revisão cruzada final concluída, a versão 0.6 foi promovida à vigência naquela revisão.
 
 ## 21 Controle de Revisão
 
@@ -374,11 +374,12 @@ Na consolidação prévia à promoção, a revisão de consumo das fontes identi
 | 0.5 | 20/10/2026 | Inclusão da regra de correção mínima suficiente após o T08; explicitação de preservação de estruturas textuais já conformes em revisões de coesão; atualização do gate de conteúdo, da preservação de escopo, da condição de liberação e do estado de maturidade; lifecycle formal mantido sem alteração. |
 | 0.6 | 21/10/2026 | Inclusão da exigência de acessibilidade efetiva do conteúdo necessário das fontes referenciadas; proibição de reconstrução de regra indisponível por memória, aparência ou inferência; definição de comportamento para decisão ou informação material sem resposta humana disponível; validação dirigida desses deltas nos testes T09 e T10; atualização da condição de liberação e do estado de maturidade; compatibilidade confirmada com o Modelo Formal v0.4; promoção como especificação operacional institucional vigente. |
 | 0.7 | 23/10/2026 | Verificação positiva de títulos, integridade OOXML e navegação no ambiente de consumo; validada nos testes A/B/C e R01 com Word para Web. Estados e transições do Modelo Formal v0.4 preservados. Promovida à vigência em 26/10/2026. |
+| 0.8 | 17/11/2026 | Saneamento OOXML de w:shd e w:tblPr; identificação e referências atualizadas. Regras e histórico preservados. |
 
 Referências
 
-MUNZLINGER, Johann. Diretriz de Qualidade e Construção de Conteúdo Documental Institucional. Versão 1.2. Diretriz institucional vigente, 2026.
+MUNZLINGER, Johann. Diretriz de Qualidade e Construção de Conteúdo Documental Institucional. Versão 1.3. Diretriz institucional vigente, 2026.
 
-MUNZLINGER, Johann. Diretriz de Padronização Documental Institucional. Versão 3.4. Diretriz institucional vigente, 2026.
+MUNZLINGER, Johann. Diretriz de Padronização Documental Institucional. Versão 3.5. Diretriz institucional vigente, 2026.
 
-MUNZLINGER, Johann. Modelo Formal do Workflow de Execução Documental por IA. Versão 0.4. Especificação institucional, 2026.
+MUNZLINGER, Johann. Modelo Formal do Workflow de Execução Documental por IA. Versão 0.5. Especificação institucional, 2026.
