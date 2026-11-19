@@ -27,7 +27,13 @@ O pacote original não fornece procedimento de build do plugin completo. O antig
 
 ## Validação local
 
-Requer Python 3.10+ e somente sua biblioteca padrão. Na raiz do repositório:
+Os verificadores de integridade e o auditor usam Python 3.10+ e sua biblioteca padrão. O reparador `normalize_docx_tables.py` já exige **lxml**, também importado pela suíte original da Skill. Para executar a suíte completa, instale essa dependência no ambiente de testes (validada nesta etapa com `lxml==6.1.3`):
+
+```bash
+python3 -m pip install --only-binary=:all: lxml==6.1.3
+```
+
+Na raiz do repositório:
 
 ```bash
 python3 skills/governanca-documental-institucional/scripts/sync_sources.py --check
@@ -40,7 +46,9 @@ python3 -m unittest discover -s tests -v
 
 O verificador original confere versões, fontes, hashes, transcrições e bootstrap. Os testes do repositório complementam a conferência de tamanhos e da identidade byte a byte de todos os arquivos distribuídos. Para detalhes de execução, consulte os documentos originais em `skills/governanca-documental-institucional/docs/`, em especial `EXECUCAO_PORTATIL.md` e `GATE_FORMAL_EVIDENCIAS.md`.
 
-O workflow `.github/workflows/validate.yml` foi preparado para executar esses mesmos seis comandos em pull requests e pushes para `main`, em Ubuntu 24.04 com Python 3.12 (validado localmente com Python 3.12.3). Usa apenas checkout e setup de Python, com permissões de leitura, sem segredos configurados, instalação de dependências do projeto, upload de artefatos ou publicação. A execução remota deste workflow permanece pendente de push autorizado; sua presença no diff não comprova CI aprovado no GitHub.
+O workflow `.github/workflows/validate.yml` executa esses seis comandos em pull requests e pushes para `main`, em Ubuntu 24.04 com Python 3.12. Foi integrado pelo PR #2, no commit `446f175a73055006cd3258a8623bdc15453514f9`. A [primeira execução nesse commit](https://github.com/johanngf/plugin_governanca_documental/actions/runs/44596360350) passou nos quatro verificadores, mas falhou ao importar a suíte original por ausência de `lxml`; os testes do repositório não executaram nessa rodada. Os testes locais anteriores utilizavam `lxml` pré-instalado, limitação que não havia sido identificada na preparação inicial.
+
+O ajuste local do CI instala `lxml==6.1.3`, dependência já exigida pelo reparador, antes das verificações. Foi validado em ambiente Python 3.12.3 isolado, sem alterar o pacote original. Mantém permissões de leitura, sem segredos configurados, upload de artefatos ou publicação. O push e a integração desse ajuste ainda dependem de autorização; a execução remota da correção não ocorreu e não se declara CI aprovado.
 
 A suíte original inclui um teste condicional com amostra externa em `/mnt/data/`; ele é ignorado quando a amostra não está disponível. Os scripts `regression_samples.py` e `regression_bt01_bt04.py` exigem artefatos externos não incluídos no pacote. Sua presença não comprova execução desses cenários nesta migração.
 
