@@ -1,6 +1,6 @@
-<!-- CÓPIA TEXTUAL DERIVADA AUTOMATICAMENTE de Modelo_Formal_Workflow_Execucao_Documental_IA_v0.4.docx. Sem autoridade normativa independente. Elementos visuais/diagramação devem ser consultados no DOCX canônico. Não editar manualmente; executar scripts/sync_sources.py --write. -->
+<!-- CÓPIA TEXTUAL DERIVADA AUTOMATICAMENTE de Modelo_Formal_Workflow_Execucao_Documental_IA_v0.5.docx. Sem autoridade normativa independente. Elementos visuais/diagramação devem ser consultados no DOCX canônico. Não editar manualmente; executar scripts/sync_sources.py --write. -->
 
-# Transcrição de consulta — Modelo_Formal_Workflow_Execucao_Documental_IA_v0.4
+# Transcrição de consulta — Modelo_Formal_Workflow_Execucao_Documental_IA_v0.5
 
 GOVERNANÇA DOCUMENTAL
 
@@ -12,9 +12,9 @@ Especificação formal do lifecycle de Solicitações, Resultados e Unidades de 
 | Finalidade | Formalizar estados, transições, gates, retornos, checkpoints, cancelamentos e condições de liberação do workflow de execução documental por IA. |
 | --- | --- |
 | Escopo | Decomposição de Solicitações em Resultados e UEs; integração; validação de conteúdo e artefato; preservação de escopo; suspensão, cancelamento e liberação. |
-| Versão | 0.4 |
-| Data de referência | 24 de setembro de 2026 |
-| Situação | Especificação institucional estabilizada após validação estrutural e reteste dirigido. |
+| Versão | 0.5 - Saneamento formal OOXML, sem alteração do workflow |
+| Data de referência | 17 de novembro de 2026 |
+| Situação | Especificação institucional vigente; substitui a versão 0.4 a partir de 17 de novembro de 2026, sem alteração de estados, transições ou invariantes. |
 | Responsável pelo documento | Johann Munzlinger |
 | Autoria | Johann Munzlinger |
 | Auxílio de IA generativa | Documento estruturado e materializado com auxílio de IA generativa; validação institucional permanece sob responsabilidade humana. |
@@ -388,6 +388,7 @@ Ao aplicar este workflow, decomponha a Solicitação em Resultados e UEs apenas 
 | 0.2 | 22/09/2026 | Separação entre Unidade de Execução e Resultado; formalização da integração, gates globais, checkpoint humano e regra de entrega. |
 | 0.3 | 23/09/2026 | Inclusão de encerramento sem alteração, bypass formal, suspensão de UE durante checkpoint e cancelamento; clarificações de bifurcações identificadas na bateria estrutural. |
 | 0.4 | 24/09/2026 | Estabilização do modelo após regressão dirigida; explicitação do destino de RT19 para R2 ou R0 conforme reabertura/criação de UE obrigatória; incorporação do reteste do falso bypass formal; institucionalização da especificação. |
+| 0.5 | 17/11/2026 | Saneamento exclusivamente formal do DOCX (w:shd e sequência w:tblPr) e atualização de identificação e rastreabilidade das fontes consultadas. Preservados estados, transições, invariantes, condições de liberação e entradas históricas anteriores. |
 
 Referências
 
@@ -400,3 +401,9 @@ MUNZLINGER, Johann. Contrato Operacional de Execução Documental por IA. Versã
 MUNZLINGER, Johann. Modelo Formal do Workflow de Execução Documental por IA. Proposta v0.3. Documento auxiliar não institucional para validação e testes, 2026.
 
 MUNZLINGER, Johann. Relatório Consolidado da Bateria de Regressão Estrutural — Modelo Formal v0.3. Versão 1.0. Documento interno, 2026.
+
+MUNZLINGER, Johann. Diretriz de Qualidade e Construção de Conteúdo Documental Institucional. Versão 1.3. Diretriz institucional vigente, 2026. Utilizada na revisão formal v0.5.
+
+MUNZLINGER, Johann. Diretriz de Padronização Documental Institucional. Versão 3.5. Diretriz institucional vigente, 2026. Utilizada na revisão formal v0.5.
+
+MUNZLINGER, Johann. Contrato Operacional de Execução Documental por IA. Versão 0.8. Especificação operacional vigente, 2026. Utilizada na revisão formal v0.5.

@@ -1,0 +1,21 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "governanca-documental-plugin",
+  "version": "0.2.2",
+  "description": "Plugin interno de Governança Documental Institucional com Skill 1.1.1 para criação, revisão, auditoria e validação de DOCX institucionais.",
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Governança Documental Institucional",
+        "shortDescription": "Governança documental em DOCX",
+        "longDescription": "Aplicação das quatro fontes normativas canônicas para construir, revisar e auditar documentos institucionais em DOCX, com gates de conteúdo e artefato. Portal de referência complementar: https://johanngf.github.io/gf_ferramentas_internas/governanca/",
+        "developerName": "Governança Documental Institucional",
+        "capabilities": [
+          "Interactive"
+        ],
+        "websiteURL": "https://johanngf.github.io/gf_ferramentas_internas/governanca/"
+      }
+    }
+  },
+  "homepage": "https://johanngf.github.io/gf_ferramentas_internas/governanca/"
+}

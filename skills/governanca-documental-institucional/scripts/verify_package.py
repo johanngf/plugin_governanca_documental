@@ -79,7 +79,21 @@ def main():
         if paths!=intended:errors.append('Manifesto não coincide com arquivos de fontes presentes')
     c=subprocess.run([sys.executable,str(ROOT/'scripts'/'sync_sources.py'),'--check'],capture_output=True,text=True)
     if c.returncode:errors.append('Transcrições divergentes: '+c.stderr.strip())
-    # Opcionalmente manifesto de repositório deve ser idêntico ao empacotado.
+    # rc.6: impede drift da cópia recuperável do auditor e falsos hashes.
+    bootstrap=ROOT/'scripts'/'rebuild_portable_gate.py'
+    if not bootstrap.is_file():
+        errors.append('Verificador de payload portátil ausente')
+    else:
+        checked=subprocess.run([sys.executable,str(bootstrap),'--check'],capture_output=True,text=True)
+        if checked.returncode:
+            errors.append('Payload portátil ou hashes divergentes: '+checked.stderr.strip())
+    portable=ROOT/'scripts'/'portable_gate.py'
+    if not portable.is_file():
+        errors.append('Bootstrap portátil ausente')
+    else:
+        checked=subprocess.run([sys.executable,str(portable),'--verify-payload','--compare-source'],capture_output=True,text=True)
+        if checked.returncode:
+            errors.append('Bootstrap portátil não recupera scripts originais: '+checked.stderr.strip())
     repofile=ROOT.parent.parent/'manifest.json'
     if repofile.exists() and manifest.exists() and repofile.read_bytes()!=manifest.read_bytes():
         errors.append('Manifesto do repositório diferente do da Skill')
