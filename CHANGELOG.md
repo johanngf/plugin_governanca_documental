@@ -1,5 +1,12 @@
 # Changelog
 
+## Correção local do CI pré-release — 2026-11-19
+
+- Após integração do PR #2 em `446f175`, a execução remota `44596360350` revelou ausência de `lxml`: quatro verificadores aprovados, erro de importação da suíte original e suíte do repositório não executada.
+- Corrigida a afirmação de biblioteca padrão suficiente para a suíte completa: o reparador original já depende de `lxml`, pré-instalado no ambiente dos testes locais anteriores.
+- Preparada instalação de `lxml==6.1.3` somente no ambiente do CI, sem alterar os 31 arquivos do plugin ou o inventário. Sem suprimir testes ou ignorar erros.
+- Registro pré-release complementado com a falha remota, reprodução isolada e ajuste local; nova execução remota permanece pendente de push autorizado.
+
 ## Pós-merge e pré-release do plugin 0.2.2 — 2026-11-19 (preparação local)
 
 - Migração integrada na `main` pelo PR #1, no commit `a9f3a0435009d74a199f3f52977246f1f3d409fc`; README atualizado para distinguir integração de código e publicação do instalável.

@@ -2,6 +2,8 @@
 
 Data de referência: 19/11/2026, America/Sao_Paulo. Registro técnico de desenvolvimento; não constitui aprovação institucional ou autorização de publicação.
 
+**Atualização:** as seções iniciais registram a preparação anterior ao PR #2. A seção final documenta a integração posterior, a falha observada no CI e a correção local; seu parecer substitui o GO inicial.
+
 ## Base e estado remoto
 
 A `main` local e o remoto foram conferidos antes das alterações e coincidem em `a9f3a0435009d74a199f3f52977246f1f3d409fc`. Não havia commits posteriores no remoto no momento da consulta, nem alterações locais preexistentes. Não foi necessário atualizar o conteúdo da `main`.
@@ -97,3 +99,23 @@ Essa recomendação permite submeter as evidências ao responsável; não autori
 Não houve importação do ZIP no ChatGPT/Codex, teste funcional do host, nova interoperabilidade Word para Web ou demonstração de acionamento implícito. Os testes Python cobrem integridade e regressões locais, incluindo auditoria OOXML parcial; não aprovam integralmente conteúdo, apresentação, workflow ou liberação institucional. As evidências históricas do manifesto original mantêm seu escopo próprio.
 
 Nenhum push, merge, tag, release, upload de ZIP, instalação, deploy, mudança de visibilidade/permissões ou atualização do portal foi realizado nesta execução.
+
+## Atualização após o PR #2 — 19/11/2026
+
+Na auditoria de encerramento, a árvore já estava limpa em `main`, no commit `446f175a73055006cd3258a8623bdc15453514f9`, merge do PR #2. O commit intermediário `4de5561` contém exatamente as quatro alterações auxiliares descritas acima. Essa integração ocorreu externamente à preparação local relatada; não foi realizada pelo agente nesta execução.
+
+A [execução remota 44596360350](https://github.com/johanngf/plugin_governanca_documental/actions/runs/44596360350), desse commit, terminou com falha. Checkout, setup de Python e os quatro verificadores passaram. A suíte original encontrou um erro de importação em `test_gate_and_repair`: o script original `normalize_docx_tables.py` requer `lxml`, ausente no runner. A rodada remota descobriu 42 casos, com 40 aprovações, 1 erro de importação e 1 teste ignorado; oito testes do módulo não chegaram a ser carregados. A suíte do repositório ficou sem execução após essa falha. Ambiente remoto: Ubuntu 24.04.5 e CPython 3.12.16.
+
+A afirmação inicial de que a biblioteca padrão bastava para toda a suíte estava incorreta. O reparador já exige `lxml` nos bytes homologados; o ambiente local anterior tinha `lxml 5.2.1` pré-instalado. Isso explica a diferença observada sem indicar corrupção do pacote. A importação foi conferida no arquivo original, sem modificá-lo.
+
+Ajuste localizado proposto antes de implementar: instalar a dependência já existente do reparador no ambiente do CI, manter todos os testes e corrigir a documentação auxiliar. Não se introduziu uma nova dependência no produto nem se alterou o escopo dos gates. Não foi usado skip adicional, `continue-on-error`, reconstrução de scripts ou modificação dos arquivos homologados.
+
+Branch da correção local: `fix/ci-lxml-pre-release-0.2.2`, criada da base `446f175a73055006cd3258a8623bdc15453514f9`. Alterados somente `.github/workflows/validate.yml`, `README.md`, `CHANGELOG.md` e este registro. Sem commit ou staging. O registro histórico `docs/MIGRACAO_0.2.2.md`, o inventário e os 31 arquivos continuam inalterados.
+
+O workflow prepara `lxml==6.1.3` com `python3 -m pip install --only-binary=:all: lxml==6.1.3` antes dos seis checks. A versão foi conferida na [metainformação oficial do PyPI](https://pypi.org/project/lxml/6.1.3/) e validada em ambiente temporário isolado Python 3.12.3. Não foram adicionados arquivos ao pacote ou dependências ao runtime compartilhado. O ambiente temporário foi criado sem pip, pois o Python do host não fornece `ensurepip`; a instalação foi direcionada a ele pelo pip do host, sem instalar pacotes de sistema.
+
+Primeiro, a falha por ausência de `lxml` foi reproduzida no ambiente isolado: 42 casos, 1 erro de importação e 1 ignorado. Depois da instalação da wheel, os mesmos seis comandos passaram: quatro verificadores aprovados, 48 testes originais aprovados e 1 ignorado, mais 11 testes do repositório aprovados. Total da rodada corrigida: **59 aprovações, 1 ignorado, nenhuma falha**. O YAML foi analisado e os comandos executados a partir dele. Essa evidência valida o ajuste local; não equivale à execução remota da correção em CPython 3.12.16.
+
+Evidências complementares em `dist/pre-release-0.2.2/`: `ci-remote-failure.txt` (resumo e trecho do log remoto), `ci-missing-lxml-reproduction.log`, `ci-lxml-isolated-validation.log`, `ci-lxml-completo.patch` e `ci-lxml-completo.stat` (diff da correção contra `446f175`). Os artefatos anteriores permanecem como evidência histórica da preparação inicial. O ZIP original continua com o mesmo SHA-256 e os mesmos 31 arquivos.
+
+**Parecer atualizado: NO-GO para solicitar publicação com o CI atualmente falhando.** A correção está preparada e passou localmente, pronta para revisão humana. A próxima decisão é autorizar sua integração e observar uma nova execução remota; o resultado dessa execução deve embasar a revisão do parecer. Nenhum push, merge, rerun de workflow, tag, release ou upload foi realizado para essa correção. A release pública existente continua sendo somente `v1.0.0`, conforme nova consulta à coleção de releases. Importação funcional do ZIP e homologação institucional continuam sem execução nesta atividade.
